@@ -22,7 +22,7 @@ dependencies {
     api(Kotlin.stdlib.jdk8)
     // use -jvm dependencies here because otherwise kts fails to fetch
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:0.3.5")
-    api("com.jillesvangurp:search-client-jvm:1.99.5")
+    api("com.jillesvangurp:search-client-jvm:1.99.6")
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)

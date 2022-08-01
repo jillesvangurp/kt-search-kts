@@ -18,4 +18,4 @@ include(":search-dsls")
 include("search-client")
 include("legacy-client")
 include("docs")
-rootProject.name = "kt-search"
+rootProject.name = "kt-search-kts"
