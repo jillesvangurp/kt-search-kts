@@ -1,6 +1,5 @@
-Simple  library that combines kt-search and kotlinx-cli to be able
-to create kts scripts and reuse the client initialization without 
-a lot of boiler-plate.
+Simple helper library for [kt-search](https://github.com/jillesvangurp/kt-search) that enables 
+scripting with Kotlin Scripts (kts)
 
 ## Adding kt-search-kts to your script
 
@@ -14,7 +13,8 @@ First, add the dependency and the maven repositories:
 
 This will transitively pull in `kt-search` and `kotlinx-cli`.
 
-Then use the `kotlinx-cli` to load the search client parameters:
+Then use the `kotlinx-cli` parser to load the search client parameters and create a 
+search client with convenient extension functions:
 
 ```kotlin
 val parser = ArgParser("script")
@@ -29,3 +29,12 @@ After this, you can use the client as normally via a `runBlocking` block (the cl
 See the scripts directory for a complete example.
 
 Happy scripting!
+
+## Some ideas for scripts
+
+- check cluster status
+- manipulate cluster settings
+- bulk index some content
+- introspect documents with some scripts
+- run some queries
+- etc. 
