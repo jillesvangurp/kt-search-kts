@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/jillesvangurp/kt-search-kts.svg)](https://jitpack.io/#jillesvangurp/kt-search-kts)
+
 Simple helper library for [kt-search](https://github.com/jillesvangurp/kt-search) that enables 
 scripting with Kotlin Scripts (kts)
 
