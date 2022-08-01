@@ -20,8 +20,9 @@ plugins {
 
 dependencies {
     api(Kotlin.stdlib.jdk8)
-    api(KotlinX.cli)
-    api("com.jillesvangurp:search-client:_")
+    // use -jvm dependencies here because otherwise kts fails to fetch
+    api("org.jetbrains.kotlinx:kotlinx-cli-jvm:1.9.5")
+    api("com.jillesvangurp:search-client-jvm:0.3.5")
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)
