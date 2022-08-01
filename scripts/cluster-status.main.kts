@@ -1,7 +1,8 @@
 #!/usr/bin/env kotlin
 
 @file:Repository("https://jitpack.io")
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.1")
+@file:Repository("https://maven.tryformation.com/releases")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.2")
 
 import com.jillesvangurp.ktsearch.ClusterStatus
 import com.jillesvangurp.ktsearch.clusterHealth
