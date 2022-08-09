@@ -13,9 +13,4 @@ plugins {
 refreshVersions {
 }
 
-include(":json-dsl")
-include(":search-dsls")
-include("search-client")
-include("legacy-client")
-include("docs")
 rootProject.name = "kt-search-kts"

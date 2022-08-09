@@ -26,7 +26,7 @@ runBlocking {
             """
                 Cluster name: ${it.clusterName}
                 Search Engine distribution: ${it.version.distribution}
-                Version: ${it.version.number}              
+                Version: ${it.version.number}
             """.trimIndent()
         )
     }
