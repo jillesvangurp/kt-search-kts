@@ -76,3 +76,11 @@ All of these things are supported by kt-search and easy to use.
 - run some queries
 - use cron jobs to do any of the above
 - etc. 
+
+## Support and Community
+
+Please file issues if you find any or have any reasonable suggestions for changes. 
+
+Within reason, I can advice and help with simple issues. Beyond that, I can offer my services as a consultant as well if you need some more help with getting started or just using Elasticsearch/Opensearch in general with any tech stack. I can help with discovery projects, trainings, architecture analysis, query and mapping optimizations, or just generally help you get the most out of your search setup and your product roadmap.
+
+You can reach me via the issue tracker and I also lurk in the amazing [Kotlin Slack](https://kotlinlang.org/community/), [Elastic Slack](https://www.elastic.co/blog/join-our-elastic-stack-workspace-on-slack), and [Search Relevancy Slack](https://opensourceconnections.com/blog/2021/07/06/building-the-search-community-with-relevance-slack/) communities. And I have a [website](https://www.jillesvangurp.com).
