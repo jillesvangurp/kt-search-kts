@@ -5,9 +5,9 @@ buildscript {
 }
 repositories {
     mavenCentral()
-    maven("https://maven.tryformation.com/releases") {
+    maven("https://jitpack.io") {
         content {
-            includeGroup("com.jillesvangurp")
+            includeGroup("com.github.jillesvangurp.kt-search")
         }
     }
 }
@@ -22,7 +22,7 @@ dependencies {
     api(Kotlin.stdlib.jdk8)
     // use -jvm dependencies here because otherwise kts fails to fetch
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
-    api("com.jillesvangurp:search-client-jvm:_")
+    api("com.github.jillesvangurp.kt-search:search-client:_")
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)
