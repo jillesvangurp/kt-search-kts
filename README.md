@@ -15,7 +15,6 @@ First, add the dependency and the maven repositories in your script (make sure i
 #!/usr/bin/env kotlin
 
 @file:Repository("https://jitpack.io")
-@file:Repository("https://maven.tryformation.com/releases")
 // look up latest version number via jitpack and the github releases.
 @file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.x")
 ```
