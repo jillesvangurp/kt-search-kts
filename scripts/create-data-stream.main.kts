@@ -14,6 +14,7 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.datetime.Clock
 import kotlin.time.Duration.Companion.days
 
+// ArgParser is used by kt-search-kts to allow you to configure the server
 val parser = ArgParser("script")
 val searchClientParams = parser.addClientParams()
 

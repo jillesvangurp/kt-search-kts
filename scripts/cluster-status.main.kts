@@ -11,13 +11,16 @@ import com.jillesvangurp.ktsearch.root
 import kotlinx.cli.ArgParser
 import kotlinx.coroutines.runBlocking
 
+// ArgParser is included by kt-search-kts to allow you to configure the search endpoint
 val parser = ArgParser("script")
+// this adds the params for configuring search end point
 val searchClientParams = parser.addClientParams()
 parser.parse(args)
 
+// extension function in kt-search-kts that uses the params
 val client = searchClientParams.searchClient
 
-// now use the client as normally in a runBlocking block
+// now use the client as normally in a runBlocking block (creates a co-routine)
 runBlocking {
     val clusterStatus=client.clusterHealth()
     client.root().let {
