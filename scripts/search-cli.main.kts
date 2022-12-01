@@ -1,5 +1,6 @@
 #!/usr/bin/env kotlin
 
+@file:Repository("https://repo1.maven.org/maven2")
 @file:Repository("https://jitpack.io")
 @file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.7")
 
@@ -55,6 +56,11 @@ runBlocking {
     }.also {
         println("Found ${it.total} results.")
     }.searchHits.forEach {
+        // note we can't deserialize using kotlinx-serialization here because
+        // we need the compiler plugin to be able to add a data class with @Serializable
+        // see this issue for a workaround https://youtrack.jetbrains.com/issue/KT-47384
+        // alternatively, you could create a separate library and push that somewhere
+        // and then pull in the -jvm jar file to get the model class on the classpath
         println(it.source?.toString())
     }
 }

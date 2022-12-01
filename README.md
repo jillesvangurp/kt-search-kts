@@ -76,6 +76,11 @@ All of these things are supported by kt-search and easy to use.
 - use cron jobs to do any of the above
 - etc. 
 
+## Documentation
+
+The [kt-search manual](https://jillesvangurp.github.io/kt-search/manual) has sections on scripting and setting up jupyter. It also explains the basics of using it to search and index documents, and use all of the other features.
+- 
+
 ## Support and Community
 
 Please file issues if you find any or have any reasonable suggestions for changes. 
