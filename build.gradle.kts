@@ -24,6 +24,8 @@ dependencies {
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
     api("com.jillesvangurp:search-client:_")
     api(KotlinX.Coroutines.core)
+    api(Ktor.Client.core)
+    api(Ktor.client.java)
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)
