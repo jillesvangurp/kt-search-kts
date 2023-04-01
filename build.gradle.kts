@@ -21,6 +21,7 @@ plugins {
 dependencies {
     api(Kotlin.stdlib.jdk8)
     // use -jvm dependencies here because otherwise kts fails to fetch
+    api("com.jillesvangurp:search-client:_")
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
     api(KotlinX.datetime)
     api(Ktor.client.core)
@@ -36,10 +37,12 @@ dependencies {
     api("io.ktor:ktor-serialization-kotlinx-json:_")
     api("io.ktor:ktor-client-content-negotiation:_")
     api(Ktor.client.java)
+    api("ch.qos.logback:logback-classic:_")
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)
     testImplementation(Testing.kotest.assertions.core)
+
 }
 
 tasks.withType<Test> {
