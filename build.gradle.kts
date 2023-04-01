@@ -22,9 +22,19 @@ dependencies {
     api(Kotlin.stdlib.jdk8)
     // use -jvm dependencies here because otherwise kts fails to fetch
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
-    api("com.jillesvangurp:search-client:_")
-    api(KotlinX.Coroutines.core)
-    api(Ktor.Client.core)
+    api(KotlinX.datetime)
+    api(Ktor.client.core)
+    api(KotlinX.coroutines.core)
+
+    api(KotlinX.serialization.json)
+    api(Ktor.client.core)
+    api(Ktor.client.auth)
+    api(Ktor.client.logging)
+    api(Ktor.client.serialization)
+    api("io.ktor:ktor-client-logging:_")
+    api("io.ktor:ktor-serialization-kotlinx:_")
+    api("io.ktor:ktor-serialization-kotlinx-json:_")
+    api("io.ktor:ktor-client-content-negotiation:_")
     api(Ktor.client.java)
 
     testImplementation(Testing.junit.jupiter.api)
