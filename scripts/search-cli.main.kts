@@ -1,8 +1,9 @@
 #!/usr/bin/env kotlin
 
-@file:Repository("https://repo1.maven.org/maven2")
+@file:Repository("https://maven.tryformation.com/releases")
+@file:Repository(" https://repo.maven.apache.org/maven2/")
 @file:Repository("https://jitpack.io")
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.7")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.7")
 
 import com.jillesvangurp.ktsearch.*
 import com.jillesvangurp.ktsearch.kts.addClientParams
