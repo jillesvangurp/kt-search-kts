@@ -23,6 +23,7 @@ dependencies {
     // use -jvm dependencies here because otherwise kts fails to fetch
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
     api("com.jillesvangurp:search-client:_")
+    api(KotlinX.Coroutines.core)
 
     testImplementation(Testing.junit.jupiter.api)
     testImplementation(Testing.junit.jupiter.engine)
