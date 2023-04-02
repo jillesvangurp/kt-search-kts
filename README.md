@@ -5,7 +5,7 @@ scripting with Kotlin Scripts (kts)
 
 ## Pre-requisites
 
-You need kotlin 1.7 installed on your system. It's available from most linux package managers, the snap store, home brew (mac), etc. It of course needs a jvm as well. 
+You need kotlin installed on your system. It's available from most linux package managers, the snap store, sdkman, home brew (mac), etc. It of course needs a jvm as well. 
 
 ## Adding kt-search-kts to your script
 
@@ -14,9 +14,18 @@ First, add the dependency and the maven repositories in your script (make sure i
 ```kotlin
 #!/usr/bin/env kotlin
 
+@file:Repository("https://maven.tryformation.com/releases")
+@file:Repository(" https://repo.maven.apache.org/maven2/")
 @file:Repository("https://jitpack.io")
-// look up latest version number via jitpack and the github releases.
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:0.1.x")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.7")
+
+import com.jillesvangurp.ktsearch.ClusterStatus
+import com.jillesvangurp.ktsearch.clusterHealth
+import com.jillesvangurp.ktsearch.kts.addClientParams
+import com.jillesvangurp.ktsearch.kts.searchClient
+import com.jillesvangurp.ktsearch.root
+import kotlinx.cli.ArgParser
+import kotlinx.coroutines.runBlocking
 ```
 
 This will transitively pull in `kt-search` and `kotlinx-cli` and everything else needed for those.
