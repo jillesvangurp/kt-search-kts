@@ -24,6 +24,7 @@ dependencies {
     api("com.jillesvangurp:search-client:_")
     api("com.jillesvangurp:search-dsls:_")
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
+    api("org.jetbrains.kotlinx:dataframe:_")
     api(KotlinX.datetime)
     api(Ktor.client.core)
     api(KotlinX.coroutines.core)
