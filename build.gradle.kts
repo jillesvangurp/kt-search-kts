@@ -23,8 +23,9 @@ dependencies {
     // use -jvm dependencies here because otherwise kts fails to fetch
     api("com.jillesvangurp:search-client:_")
     api("com.jillesvangurp:search-dsls:_")
+    api("com.jillesvangurp:json-dsl:_")
+    api("com.jillesvangurp:kotlinx-serialization-extensions:_")
     api("org.jetbrains.kotlinx:kotlinx-cli-jvm:_")
-    api("org.jetbrains.kotlinx:dataframe:_")
     api(KotlinX.datetime)
     api(Ktor.client.core)
     api(KotlinX.coroutines.core)
