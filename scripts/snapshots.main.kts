@@ -3,12 +3,12 @@
 @file:Repository("https://maven.tryformation.com/releases")
 @file:Repository(" https://repo.maven.apache.org/maven2/")
 @file:Repository("https://jitpack.io")
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.7")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.8")
 
-import com.jillesvangurp.ktsearch.DEFAULT_PRETTY_JSON
 import com.jillesvangurp.ktsearch.kts.addClientParams
 import com.jillesvangurp.ktsearch.kts.searchClient
 import com.jillesvangurp.ktsearch.listSnapshots
+import com.jillesvangurp.serializationext.DEFAULT_PRETTY_JSON
 import kotlinx.cli.ArgParser
 import kotlinx.cli.ArgType
 import kotlinx.cli.required

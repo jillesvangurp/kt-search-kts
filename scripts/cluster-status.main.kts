@@ -3,7 +3,7 @@
 @file:Repository("https://maven.tryformation.com/releases")
 @file:Repository(" https://repo.maven.apache.org/maven2/")
 @file:Repository("https://jitpack.io")
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.7")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.8")
 
 import com.jillesvangurp.ktsearch.ClusterStatus
 import com.jillesvangurp.ktsearch.clusterHealth

@@ -3,18 +3,17 @@
 @file:Repository("https://maven.tryformation.com/releases")
 @file:Repository(" https://repo.maven.apache.org/maven2/")
 @file:Repository("https://jitpack.io")
-@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.7")
+@file:DependsOn("com.github.jillesvangurp:kt-search-kts:1.0.8")
 
-import com.jillesvangurp.ktsearch.*
 import com.jillesvangurp.ktsearch.kts.addClientParams
 import com.jillesvangurp.ktsearch.kts.searchClient
-import com.jillesvangurp.searchdsls.querydsl.matchAll
-import com.jillesvangurp.searchdsls.querydsl.queryString
+import com.jillesvangurp.ktsearch.search
+import com.jillesvangurp.ktsearch.searchHits
+import com.jillesvangurp.ktsearch.total
 import com.jillesvangurp.searchdsls.querydsl.simpleQueryString
 import kotlinx.cli.ArgParser
 import kotlinx.cli.ArgType
 import kotlinx.cli.default
-import kotlinx.cli.required
 import kotlinx.coroutines.runBlocking
 
 // ArgParser is included by kt-search-kts to allow you to configure the search endpoint
