@@ -11,6 +11,7 @@ interface SearchClientParams {
     val port: Int
     val user: String?
     val password: String?
+    val apiKey: String?
     val ssl: Boolean
     val logApiCalls: Boolean
 
@@ -24,6 +25,7 @@ val SearchClientParams.searchClient get() = SearchClient(
         port = port,
         user = user,
         password = password,
+        elasticApiKey = apiKey,
         https = ssl,
         logging = logApiCalls
     )
@@ -44,6 +46,11 @@ fun ArgParser.addClientParams(): SearchClientParams {
             ArgType.String,
             fullName = "password",
             description = "Basic authentication user name if using with cloud hosting"
+        )
+        override val apiKey by parser.option(
+            ArgType.String,
+            fullName = "apiKey",
+            description = "Elasticsearch apiKey"
         )
         override val ssl by parser.option(ArgType.Boolean, fullName = "protocol", description = "Use https if true")
             .default(false)
